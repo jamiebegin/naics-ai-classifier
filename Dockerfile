@@ -1,6 +1,3 @@
-# Pulling from AWS because CodeBuild gets rate limited pulling from DockerHub
-# FROM public.ecr.aws/docker/library/python:3.13-slim AS base
-
 FROM pytorch/pytorch:2.2.1-cuda11.8-cudnn8-runtime
 
 ENV PYTHONUNBUFFERED=1
