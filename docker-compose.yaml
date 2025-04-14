@@ -1,0 +1,13 @@
+services:
+  naics_classifier:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]      
+    restart: "no"
+    volumes:
+      - ./app:/app
